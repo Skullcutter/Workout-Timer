@@ -1,105 +1,70 @@
-## Introduction
+# Getting Started with Create React App
 
-Workout Timer is a **demo learning project** built with React to explore concepts like state management with hooks, derived/calculated state, memoization, side effects, and modular component design. The app allows users to select a workout type, adjust parameters (sets, speed per exercise, break length), and instantly see the calculated total workout duration.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-It also includes a real-time clock display and an optional sound effect that plays when parameters change. This project is designed for beginners learning React fundamentals while building something interactive and visually appealing.
+## Available Scripts
 
-## 🌟 Features
+In the project directory, you can run:
 
-- **Workout Selection** — Choose from predefined workout types with varying numbers of exercises.
+### `npm start`
 
-- **Dynamic Parameter Control** — Adjust:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-  - Number of sets (1–5)
-  - Speed per exercise (30–180 sec)
-  - Break duration (1–10 min)
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-- **Real-Time Calculation** — Updates total workout duration automatically as inputs change.
+### `npm test`
 
-- **Sound Toggle** — Mute or unmute click sound effects with a single button.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- **Live Clock** — Displays current date and time, updated every second.
+### `npm run build`
 
-- **Memoization Optimization** — Uses `useMemo` to avoid unnecessary recalculations.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## 🛠️ Tech Stack
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- **React** (Functional Components + Hooks)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-  - `useState`, `useEffect`, `useMemo`
+### `npm run eject`
 
-- **CSS** for styling
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-- **JavaScript ES6+** features
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- **Audio API** for sound playback
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-## 📁 Project Structure
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-```
-/src
-  ├─ App.js           # Main app component with clock, workout list, sound toggle
-  ├─ Calculator.js    # Calculator component for duration logic and input controls
-  ├─ ToggleSounds.js  # Button to toggle sound effects on/off
-  ├─ ClickSound.m4a   # Audio file for click sound effect
-  ├─ index.js         # App entry point
-  ├─ index.css        # Styling for layout and components
-```
+## Learn More
 
-## 🚀 Installation & Run
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
-   cd <repo-name>
-   ```
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-3. **Run the app**:
-   ```bash
-   npm start
-   ```
-4. Open `http://localhost:3000` in your browser.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## 🎮 How It Works
+### Code Splitting
 
-1. **Clock**: `useEffect` sets up an interval to update the current time every second.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-2. **Workout List**: Uses `useMemo` to define workout options dynamically based on AM/PM.
+### Analyzing the Bundle Size
 
-3. **Duration Calculation**: Automatically recalculates total workout time whenever inputs change.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-4. **Sound Effects**: Plays an audio clip when duration changes, unless muted.
+### Making a Progressive Web App
 
-5. **Increment/Decrement**: Plus and minus buttons allow manual adjustment of total time.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-## 🎯 Learning Objective
+### Advanced Configuration
 
-- Managing multiple pieces of state with `useState`.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-- Running side effects with `useEffect` (intervals, audio playback).
+### Deployment
 
-- Using `useMemo` for performance optimization.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-- Passing props between components for interactivity.
+### `npm run build` fails to minify
 
-- Styling and layout creation in CSS for a professional look.
-
-- Integrating media assets (audio) in React.
-
-## 🤝 Contributions
-
-Contributions are welcome!
-
-1. Fork the repository.
-2. Create a feature branch:
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-3. Commit changes and push:
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-4. Open a Pull Request describing your changes.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
